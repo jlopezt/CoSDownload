@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "f161829a-9df5-4938-af34-7a2108a97926",
+		"name": "CoS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3321846"
+	},
+	"item": [
+		{
+			"name": "Home page",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"host": true,
+					"user-agent": true,
+					"connection": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "es",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1",
+						"type": "text"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://siopmgr.totemtowers.es/tsp/",
+					"protocol": "https",
+					"host": [
+						"siopmgr",
+						"totemtowers",
+						"es"
+					],
+					"path": [
+						"tsp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Init",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": " gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " es",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": " CSRF-TOKEN=ec4ddf10-e97e-4e79-bb28-f60daf106f88",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": " https://siopmgr.totemtowers.es/tsp/",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": " empty",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": " cors",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": " same-origin",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": " ec4ddf10-e97e-4e79-bb28-f60daf106f88",
+						"type": "text"
+					},
+					{
+						"key": "X-client-language",
+						"value": " en-US",
+						"type": "text"
+					},
+					{
+						"key": "X-client-tenant",
+						"value": " tsp",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": " \"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": " ?0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": " \"Windows\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://siopmgr.totemtowers.es/tsp/api/client/tsp/init",
+					"protocol": "https",
+					"host": [
+						"siopmgr",
+						"totemtowers",
+						"es"
+					],
+					"path": [
+						"tsp",
+						"api",
+						"client",
+						"tsp",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login usuario",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true,
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": " gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " es",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": " 49",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": " CSRF-TOKEN=8502db7b-e063-4aab-92fd-812f8b093bf5",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": " https://siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": " https://siopmgr.totemtowers.es/tsp/",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": " empty",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": " cors",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": " same-origin",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": " 8502db7b-e063-4aab-92fd-812f8b093bf5",
+						"type": "text"
+					},
+					{
+						"key": "X-client-language",
+						"value": " en-US",
+						"type": "text"
+					},
+					{
+						"key": "X-client-tenant",
+						"value": " tsp",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": " \"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": " ?0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": " \"Windows\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"jose.lopezt\",\"password\":\"Jorsadi-0\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://siopmgr.totemtowers.es/tsp/api/identity/login",
+					"protocol": "https",
+					"host": [
+						"siopmgr",
+						"totemtowers",
+						"es"
+					],
+					"path": [
+						"tsp",
+						"api",
+						"identity",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pide CSV",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": " gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " es",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": " 91",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": " X-auth-token=7bcf8d9b-22af-470e-9a7e-63b1a8857cb6; X-client-tenant=tsp; CSRF-TOKEN=a2adb6e3-57d4-410f-919b-625c881a89b5; _pk_id.2.e9ea=73755523c7542126.1700396420.1.1700396420.1700396420.; _pk_ses.2.e9ea=1",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": " https://siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": " https://siopmgr.totemtowers.es/tsp/",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": " empty",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": " cors",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": " same-origin",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+						"type": "text"
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": " a2adb6e3-57d4-410f-919b-625c881a89b5",
+						"type": "text"
+					},
+					{
+						"key": "X-auth-token",
+						"value": " 7bcf8d9b-22af-470e-9a7e-63b1a8857cb6",
+						"type": "text"
+					},
+					{
+						"key": "X-client-language",
+						"value": " es-ES",
+						"type": "text"
+					},
+					{
+						"key": "X-client-login",
+						"value": " jose.lopezt",
+						"type": "text"
+					},
+					{
+						"key": "X-client-tenant",
+						"value": " tsp",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": " \"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": " ?0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": " \"Windows\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"entityType\":\"work_order\",\"filters\":[],\"facets\":[],\"searchExpression\":\"\",\"excludedIds\":[]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://siopmgr.totemtowers.es/tsp/api/entity/type/work_order/export/csv",
+					"protocol": "https",
+					"host": [
+						"siopmgr",
+						"totemtowers",
+						"es"
+					],
+					"path": [
+						"tsp",
+						"api",
+						"entity",
+						"type",
+						"work_order",
+						"export",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descarga fichero",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"connection": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": " gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " es",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": " X-auth-token=8d47d567-c68f-47b5-8212-eee1b137c882; X-client-tenant=tsp; CSRF-TOKEN=a2adb6e3-57d4-410f-919b-625c881a89b5; _pk_id.2.e9ea=73755523c7542126.1700396420.1.1700396420.1700396420.; _pk_ses.2.e9ea=1",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " siopmgr.totemtowers.es",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": " https://siopmgr.totemtowers.es/tsp/",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": " document",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": " navigate",
+						"type": "text"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": " same-origin",
+						"type": "text"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": " 1",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": " \"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": " ?0",
+						"type": "text"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": " \"Windows\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://siopmgr.totemtowers.es/tsp/api/dms/download/tsp/export/csv/c7626a15-2cd5-48c1-a7a2-d01831cc4514.csv/1.0",
+					"protocol": "https",
+					"host": [
+						"siopmgr",
+						"totemtowers",
+						"es"
+					],
+					"path": [
+						"tsp",
+						"api",
+						"dms",
+						"download",
+						"tsp",
+						"export",
+						"csv",
+						"c7626a15-2cd5-48c1-a7a2-d01831cc4514.csv",
+						"1.0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

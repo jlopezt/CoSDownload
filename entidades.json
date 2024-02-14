@@ -1,0 +1,136 @@
+{
+    "ficheros":[
+        {
+            "nombre": "workOrdes",
+            "url": "work_order",
+            "nombreFich": "WorkOrdes",
+            "entityType": "work_order"
+        },
+        {
+            "nombre": "sites",
+            "url": "site",
+            "nombreFich": "Sites",
+            "entityType": "site"
+        },
+        {
+            "nombre": "location",
+            "url": "location",
+            "nombreFich": "Location",
+            "entityType": "location"
+        },
+        {
+            "nombre": "Address",
+            "url": "address",
+            "nombreFich": "Address",
+            "entityType": "address"
+        },
+        {
+            "nombre": "site_access_request",
+            "url": "site_access_request",
+            "nombreFich": "SiteAccessRequest",
+            "entityType": "site_access_request"
+        },
+        {
+            "nombre": "tenants",
+            "url": "tenancy",
+            "nombreFich": "Tenancies",
+            "entityType": "tenancy"
+        },
+        {
+            "nombre": "Contratos tenants",
+            "url": "tenant_lease",
+            "nombreFich": "contratosTenants",
+            "entityType": "tenant_lease"
+        },
+        {
+            "nombre": "Acuerdos marco",
+            "url": "frame_agreement",
+            "nombreFich": "acuerdosMarco",
+            "entityType": "frame_agreement"
+        },
+        {
+            "nombre": "Contratos arrendamiento",
+            "url": "lease",
+            "nombreFich": "contratosArrendamiento",
+            "entityType": "lease"
+        },
+        {
+            "nombre": "Incidencias de contratos",
+            "url": "lease_request",
+            "nombreFich": "incidenciasContratos",
+            "entityType": "lease_request"
+        },        
+        {
+            "nombre": "Partes relacionadas",
+            "url": "related_third_party",
+            "nombreFich": "relatedParties",
+            "entityType": "related_third_party"
+        },
+        {
+            "nombre": "condiciones beneficiario",
+            "url": "beneficiary_condition",
+            "nombreFich": "beneficiaryConditions",
+            "entityType": "beneficiary_condition"
+        },
+        {
+            "nombre": "Detalle bancario",
+            "url": "bank_detail",
+            "nombreFich": "bankDetails",
+            "entityType": "bank_detail"
+        },
+         {
+            "nombre": "Energia",
+            "url": "power",
+            "nombreFich": "energia",
+            "entityType": "power"
+        },
+         {
+            "nombre": "contratos de energia",
+            "url": "power_contract",
+            "nombreFich": "contratosEnergia",
+            "entityType": "power_contract"
+        },
+        {
+            "nombre": "Autorizaciones administrativas",
+            "url": "administrative_authorization",
+            "nombreFich": "autorizacionesAdministrativas",
+            "entityType": "administrative_authorization"
+        },
+        {
+            "nombre": "Informe de visita",
+            "url": "visit_report",
+            "nombreFich": "informeVisita",
+            "entityType": "visit_report"
+        },
+        {
+            "nombre": "Defectos",
+            "url": "snag",
+            "nombreFich": "defectos",
+            "entityType": "snag"
+        },
+        {
+            "nombre": "Riesgos",
+            "url": "risk_management",
+            "nombreFich": "riesgos",
+            "entityType": "risk_management"
+        },
+        {
+            "nombre": "Tickets",
+            "url": "trouble_ticket",
+            "nombreFich": "tickets",
+            "entityType": "trouble_ticket"
+        },
+        {
+            "nombre": "Pedidos",
+            "url": "purchase_request",
+            "nombreFich": "pedidos",
+            "entityType": "purchase_request"
+        },
+        {
+            "nombre": "Hojas de acceso",
+            "url": "access_sheet",
+            "nombreFich": "hojasAcceso",
+            "entityType": "access_sheet"
+        }
+    ]
+}

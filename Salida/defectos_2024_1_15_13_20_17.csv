@@ -1,0 +1,5 @@
+﻿"ID Defecto - prefix","ID Defecto - number","ID Defecto","ID del sitio - prefix","ID del sitio - number","ID del sitio","ID Orden de trabajo - prefix","ID Orden de trabajo - number","ID Orden de trabajo","ID Informe de Visita - prefix","ID Informe de Visita - number","ID Informe de Visita",Estado,Autor,"Ultimo cambio","Fecha de CreaciÃ³n",Criticidad,DescripciÃ³n
+SN,1,SN00001,,,,,,-,,,-,Cerrado,"Jose manuel  Rodriguez rodriguez","2024-01-10 11:40:17",2023-12-27,Leve,"Prueba de cierre de reparos."
+SN,3,SN00003,,,,,,-,,,-,Cerrado,"Javier Fernandez Tellez","2024-01-12 10:48:54",2024-01-11,Leve,"BX0111_CODICHECK_SEMI_hfjdhfjdfhdjfhd
+JMRR.- Site en desmantelamiento, no aplica reparo."
+SN,2,SN00002,,,,,,-,,,-,Cerrado,"Javier Fernandez Tellez","2024-01-12 10:49:02",2024-01-11,Leve,"prueba prueba / JMRR.- Prueba de cierre con comentarios."

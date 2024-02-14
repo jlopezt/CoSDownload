@@ -1,0 +1,5 @@
+﻿"ID Defecto - prefix","ID Defecto - number","ID Defecto","ID del sitio - prefix","ID del sitio - number","ID del sitio","ID Orden de trabajo - prefix","ID Orden de trabajo - number","ID Orden de trabajo","ID Informe de Visita - prefix","ID Informe de Visita - number","ID Informe de Visita",Estado,Autor,"Ultimo cambio","Fecha de Creación",Criticidad,Descripción
+SN,4,SN00004,,,,,,-,VR,25167,VR-25167,Cerrado,"Cristina Fernandez Garcia","2024-01-30 15:18:00",2024-01-30,Grave,"x FALTA BOTIQUIN"
+SN,1,SN00001,,,,,,-,VR,25167,VR-25167,Cerrado,"Javier Fernandez Tellez","2024-01-30 09:29:17",2024-01-20,,PRUEBA_PRUEBA_PRUEBA
+SN,2,SN00002,,,,,,-,VR,25167,VR-25167,Cerrado,"Jose María Arias López","2024-01-30 09:28:59",2024-01-26,,"29/01.- JMRR.- Se cierra el reparo por falta de información. No hay datos de SITE, tipo de reparo imputado, fotos, etc..."
+SN,3,SN00003,,,,,,-,VR,25167,VR-25167,Cerrado,"Cristina Fernandez Garcia","2024-01-30 12:09:56",2024-01-30,"Muy Grave","X TRABAJADOR NO ACREDITADO"
