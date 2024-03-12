@@ -4,6 +4,7 @@ import warnings
 from datetime import date
 from datetime import datetime
 
+import sys
 import os
 import glob
 import csv
@@ -212,7 +213,7 @@ finally:
 dirSalida="Salida/"
 dirAutomatismos="Automatismos/"
 
-target_url = "Documentos compartidos/ExtraccionAutomaticaCoS"
+target_url = "Documentos compartidos/ExtraccionAutomaticaCoS" + '_TEST'
 size_chunk = 1000000
 #local_path = "C:\desarrollo\python\CoSDownload\Salida\equipamientoTotem.csv"
 
@@ -496,6 +497,8 @@ for fichero in ficheros:
                 ).execute_query()
             f.close() 
 
+            #Subir a Google Cloud Platform
+
             #Creo y subo el xlx
             print("Convirtiendo " + fichero["nombreFich"] + ".csv a xlsx")
             csv2xlsx(dirAutomatismos,fichero["nombreFich"] + '.csv',nombre_hoja='')
@@ -511,9 +514,14 @@ for fichero in ficheros:
 
             print("File {0} subido correctamente".format(uploaded_file.serverRelativeUrl))
         except Exception as e:
+            type, value, traceback = sys.exc_info()
+            #print(f'caught {type(e)}: e')
+            print('Error:\n type: %s\n value %s\n traceback: %s' % (type, value, traceback))
+            continue
+            """
             print(f'caught {type(e)}: e')
             continue
-
+            """
     else:
         print("Solicitud de descarga fallida")
         

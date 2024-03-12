@@ -1,136 +1,165 @@
 {
-    "ficheros":[
+	"ficheros":[
         {
             "nombre": "workOrdes",
             "url": "work_order",
-            "nombreFich": "WorkOrdes",
+            "nombreFich": "CosWorkOrders",
+            "nombreDir": "CosWorkOrders",
             "entityType": "work_order"
         },
         {
             "nombre": "sites",
             "url": "site",
-            "nombreFich": "Sites",
+            "nombreFich": "CosSite",
+            "nombreDir": "CosSite",
             "entityType": "site"
         },
         {
             "nombre": "location",
             "url": "location",
-            "nombreFich": "Location",
+            "nombreFich": "CosLocation",
+            "nombreDir": "CosLocation",
             "entityType": "location"
         },
         {
             "nombre": "Address",
             "url": "address",
-            "nombreFich": "Address",
+            "nombreFich": "CosAddress",
+            "nombreDir": "CosAddress",
             "entityType": "address"
         },
         {
             "nombre": "site_access_request",
             "url": "site_access_request",
-            "nombreFich": "SiteAccessRequest",
+            "nombreFich": "CosSiteAccessRequest",
+            "nombreDir": "CosSiteAccessRequest",
             "entityType": "site_access_request"
         },
         {
             "nombre": "tenants",
             "url": "tenancy",
-            "nombreFich": "Tenancies",
+            "nombreFich": "CosTenancy",
+            "nombreDir": "CosTenancy",
             "entityType": "tenancy"
         },
         {
             "nombre": "Contratos tenants",
             "url": "tenant_lease",
-            "nombreFich": "contratosTenants",
+            "nombreFich": "CosContractTenant",
+            "nombreDir": "CosContractTenant",
             "entityType": "tenant_lease"
         },
         {
             "nombre": "Acuerdos marco",
             "url": "frame_agreement",
-            "nombreFich": "acuerdosMarco",
+            "nombreFich": "CosAcuerdoMarco",
+            "nombreDir": "CosAcuerdoMarco",
             "entityType": "frame_agreement"
         },
         {
             "nombre": "Contratos arrendamiento",
             "url": "lease",
-            "nombreFich": "contratosArrendamiento",
+            "nombreFich": "CosContractLease",
+            "nombreDir": "CosContractLease",
             "entityType": "lease"
         },
         {
             "nombre": "Incidencias de contratos",
             "url": "lease_request",
-            "nombreFich": "incidenciasContratos",
+            "nombreFich": "CosIncidentContract",
+            "nombreDir": "CosIncidentContract",
             "entityType": "lease_request"
         },        
         {
             "nombre": "Partes relacionadas",
             "url": "related_third_party",
-            "nombreFich": "relatedParties",
+            "nombreFich": "CosRelatedParty",
+            "nombreDir": "CosRelatedParty",
             "entityType": "related_third_party"
         },
         {
             "nombre": "condiciones beneficiario",
             "url": "beneficiary_condition",
-            "nombreFich": "beneficiaryConditions",
+            "nombreFich": "CosBeneficiaryCondition",
+            "nombreDir": "CosBeneficiaryCondition",
             "entityType": "beneficiary_condition"
         },
         {
             "nombre": "Detalle bancario",
             "url": "bank_detail",
-            "nombreFich": "bankDetails",
+            "nombreFich": "CosBankDetail",
+            "nombreDir": "CosBankDetail",
             "entityType": "bank_detail"
         },
          {
             "nombre": "Energia",
             "url": "power",
-            "nombreFich": "energia",
+            "nombreFich": "CosEnergy",
+            "nombreDir": "CosEnergy",
             "entityType": "power"
         },
          {
             "nombre": "contratos de energia",
             "url": "power_contract",
-            "nombreFich": "contratosEnergia",
+            "nombreFich": "CosContractEnergy",
+            "nombreDir": "CosContractEnergy",
             "entityType": "power_contract"
         },
         {
             "nombre": "Autorizaciones administrativas",
             "url": "administrative_authorization",
-            "nombreFich": "autorizacionesAdministrativas",
+            "nombreFich": "CosAdministrativeAuthorization",
+            "nombreDir": "CosAdministrativeAuthorization",
             "entityType": "administrative_authorization"
         },
         {
             "nombre": "Informe de visita",
             "url": "visit_report",
-            "nombreFich": "informeVisita",
+            "nombreFich": "CosVisitReport",
+            "nombreDir": "CosVisitReport",
             "entityType": "visit_report"
         },
         {
             "nombre": "Defectos",
             "url": "snag",
-            "nombreFich": "defectos",
+            "nombreFich": "CosDefects",
+            "nombreDir": "CosDefects",
             "entityType": "snag"
         },
         {
             "nombre": "Riesgos",
             "url": "risk_management",
-            "nombreFich": "riesgos",
+            "nombreFich": "CosRisk",
+            "nombreDir": "CosRisk",
             "entityType": "risk_management"
         },
         {
             "nombre": "Tickets",
             "url": "trouble_ticket",
-            "nombreFich": "tickets",
+            "nombreFich": "CosTicket",
+            "nombreDir": "CosTicket",
             "entityType": "trouble_ticket"
         },
         {
             "nombre": "Pedidos",
             "url": "purchase_request",
-            "nombreFich": "pedidos",
+            "nombreFich": "CosPurchaseOrder",
+            "nombreDir": "CosPurchaseOrder",
             "entityType": "purchase_request"
         },
         {
             "nombre": "Hojas de acceso",
             "url": "access_sheet",
-            "nombreFich": "hojasAcceso",
+            "nombreFich": "CosAccessSheet",
+            "nombreDir": "CosAccessSheet",
             "entityType": "access_sheet"
+        },         
+        {
+            "nombre": "equipamientoTotem",
+            "url": "equipment",
+            "nombreFich": "CosEquipmentTotem",
+            "nombreDir": "CosEquipmentTotem",
+			"entityType": "equipment"
         }
     ]
 }
