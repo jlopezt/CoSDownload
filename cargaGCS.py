@@ -17,16 +17,19 @@ def upload_to_gcs(bucket_name, local_directory, destination_directory):
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
 
-    for local_file in os.listdir(local_directory):        
-        local_file_path = os.path.join(local_directory, local_file)
-        if os.path.isfile(local_file_path):
-            dir=local_file.split('_',1)[0]
-            #destination_blob_name = os.path.join(destination_directory, dir, local_file)
-            destination_blob_name = destination_directory + '/' + dir + '/' + local_file
-            blob = bucket.blob(destination_blob_name)
-            #blob.delete()
-            blob.upload_from_filename(local_file_path)
-            print(f"File {local_file_path} uploaded to {destination_blob_name} in {bucket_name} bucket.")
+    for local_file in os.listdir(local_directory):
+        nombre_archivo, extension = os.path.splitext(local_file)
+        #print("Nombre del fichero: " + nombre_archivo + extension)
+        if(extension=='.csv'):
+            local_file_path = os.path.join(local_directory, local_file)
+            if os.path.isfile(local_file_path):
+                dir=local_file.split('_',1)[0]
+                #destination_blob_name = os.path.join(destination_directory, dir, local_file)
+                destination_blob_name = destination_directory + '/' + dir + '/' + local_file
+                blob = bucket.blob(destination_blob_name)
+                #blob.delete()
+                blob.upload_from_filename(local_file_path)
+                print(f"File {local_file_path} uploaded to {destination_blob_name} in {bucket_name} bucket.")
 
 # --MAIN--
 # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable

@@ -17,6 +17,8 @@ from office365.runtime.auth.user_credential import UserCredential
 
 from xlsxwriter.workbook import Workbook
 
+from google.cloud import storage
+
 warnings.filterwarnings("ignore")
 
 # replacement strings
@@ -24,8 +26,10 @@ BASURA_INICIAL = 'ï»¿'
 WINDOWS_LINE_ENDING = '\r\n'
 UNIX_LINE_ENDING = '\n'
 
+
 #fichero configuracion de reports a leer
 reports='reports.json'
+
 
 #URLs de CoS
 url_hello='https://siopmgr.totemtowers.es/tsp/#/identity/login'
@@ -37,10 +41,23 @@ url_report ='https://siopmgr.totemtowers.es/tsp/api/report'
 url_download = 'https://siopmgr.totemtowers.es/tsp/api/dms/download/tsp/export/csv/[FICHERO_DESCARGA]/1.0'
 url_csv='https://siopmgr.totemtowers.es/tsp/api/report/export/csv'
 
+
 #Sharepoint URL y usuario
 username = "robotFicheros@totemtowersspain.es"
 password = "R0b0tF1ch3r0s"
 team_site_url = "https://totemtowersspain.sharepoint.com/sites/Prueba_QLIK"
+
+
+#Configuracion Google Cloud Storage
+# Configuracion - Datos globales
+bucket_name = "tsp-cos-inpudata"
+local_directory = "Salida" #"/path/to/local/directory"
+destination_directory = "D4T_Input" #"uploaded-files"
+
+# Set the path to your service account key file
+keyfile_path = 'keyfile/tgr-d4t-securestorage-dev-98a82faad55a.json' #'/path/to/keyfile.json'
+# Set the GOOGLE_APPLICATION_CREDENTIALS environment variable
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = keyfile_path
 
 
 #Payloads
@@ -98,6 +115,34 @@ dirAutomatismos="Automatismos/"
 target_url = "Documentos compartidos/ExtraccionAutomaticaCoS"  + '_TEST'
 size_chunk = 1000000
 #local_path = "C:\desarrollo\python\CoSDownload\Salida\equipamientoTotem.csv"
+
+########################## --Funciones--
+def upload_to_gcs(bucket_name, local_directory, destination_directory):
+    """Uploads all files in a local directory to a Google Cloud Storage bucket."""
+    storage_client = storage.Client()
+    bucket = storage_client.bucket(bucket_name)
+
+    for local_file in os.listdir(local_directory):        
+        local_file_path = os.path.join(local_directory, local_file)
+        if os.path.isfile(local_file_path):
+            dir=local_file.split('_',1)[0]
+            #destination_blob_name = os.path.join(destination_directory, dir, local_file)
+            destination_blob_name = destination_directory + '/' + dir + '/' + local_file
+            blob = bucket.blob(destination_blob_name)
+            #blob.delete()
+            blob.upload_from_filename(local_file_path)
+            print(f"File {local_file_path} uploaded to {destination_blob_name} in {bucket_name} bucket.")
+
+def uploadFile_to_gcs(bucket_name, file, destination_directory):
+    """Uploads all files in a local directory to a Google Cloud Storage bucket."""
+    storage_client = storage.Client()
+    bucket = storage_client.bucket(bucket_name)
+
+    destination_blob_name=destination_directory + "/" + file
+    blob = bucket.blob(destination_blob_name)
+    blob.upload_from_filename(file)
+    #blob.delete()
+    print(f"Fichero {file} subido a {destination_blob_name} en el bucket {bucket_name}.")
 
 def csv2xlsx(path_origen,nombre_fichero,nombre_hoja=''):
     for csvfile in glob.glob(os.path.join(path_origen, nombre_fichero)):
@@ -508,6 +553,11 @@ for fichero in ficheros:
                                 f.close() 
                                                     
                                 print("File {0} subido correctamente".format(uploaded_file.serverRelativeUrl))
+
+                                if (fichero["nombreDir"]!=""):
+                                    pass
+                                    #uploadFile_to_gcs(bucket_name, nombreSalida, fichero["nombreDir"])
+
                             except Exception as e:
                                 type, value, traceback = sys.exc_info()
                                 #print(f'caught {type(e)}: e')

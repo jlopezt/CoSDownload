@@ -1,24 +1,178 @@
 {
     "ficheros":[
         {
-            "nombre": "PIs",
-            "url": "00c32982-c2ec-4e20-b114-46ca564491c5",
-            "nombreFich": "PIs"
+            "nombre": "workOrdes",
+            "url": "60ac5d1a-975d-45a8-8e84-e43998fdaa6e",
+            "nombreFich": "CosWorkOrders",
+            "nombreDir": "CosWorkOrders"
         },
         {
-            "nombre": "SAR",
-            "url": "020e6c4a-1484-40db-9c82-8943cbd089ee",
-            "nombreFich": "SAR"
+            "nombre": "Sites",
+            "url": "fee4ce75-8661-444e-80f5-a89ba6d79d36",
+            "nombreFich": "CosSite",
+            "nombreDir": "CosSite"
+        },
+        {
+            "nombre": "Location",
+            "url": "5921f52c-b1eb-4be3-9583-f8d3f9c47699",
+            "nombreFich": "CosLocation",
+            "nombreDir": "CosLocation"
+        },
+        {
+            "nombre": "Address",
+            "url": "daf17911-e27e-4ef8-95dc-d15c2c17461d",
+            "nombreFich": "CosAddress",
+            "nombreDir": "CosAddress"
+        },
+        {
+            "nombre": "SiteAccessRequest",
+            "url": "8a0d2b29-ed79-47f6-8d1b-db7d3a4f2d62",
+            "nombreFich": "CosSiteAccessRequest",
+            "nombreDir": "CosSiteAccessRequest"
+        },
+        {
+            "nombre": "Tenants",
+            "url": "8d080e5a-1b23-4581-b124-8458b4259b18",
+            "nombreFich": "CosTenancy",
+            "nombreDir": "CosTenancy"
+        },
+        {
+            "nombre": "CotratosTeants",
+            "url": "7dee3b6c-78eb-4b1f-88eb-d1c5fe39b098",
+            "nombreFich": "CosContractTenant",
+            "nombreDir": "CosContractTenant"
+        },
+        {
+            "nombre": "AcuerdoMarco",
+            "url": "e59efe76-b8cc-4c20-8471-203e8a4a30a5",
+            "nombreFich": "CosAcuerdoMarco",
+            "nombreDir": "CosAcuerdoMarco"
+        },
+        {
+            "nombre": "Contratos",
+            "url": "f69bb97f-8174-4d9d-b3ae-534d9c2cd008",
+            "nombreFich": "CosContractLease",
+            "nombreDir": "CosContractLease"
+        },
+        {
+            "nombre": "IncidenciasContrato",
+            "url": "759d26b8-fa21-4eb0-9686-14b784ade066",
+            "nombreFich": "CosIncidentContract",
+            "nombreDir": "CosIncidentContract"
+        },
+        {
+            "nombre": "PartesRelacionadas",
+            "url": "3cc0035a-18e5-4f8a-ac61-d5028a1c8dfd",
+            "nombreFich": "CosRelatedParty",
+            "nombreDir": "CosRelatedParty"
+        },
+        {
+            "nombre": "CondicionesBeneficiario",
+            "url": "d22571eb-2c99-4587-99c9-f99a6cc8550e",
+            "nombreFich": "CosBeneficiaryCondition",
+            "nombreDir": "CosBeneficiaryCondition"
+        },
+        {
+            "nombre": "DetalleBancario",
+            "url": "0ba6d152-ca09-4817-8a43-e7fce3909172",
+            "nombreFich": "CosBankDetail",
+            "nombreDir": "CosBankDetail"
+        },
+        {
+            "nombre": "Energia",
+            "url": "3ccf49c7-8d40-466e-b0be-114de5496374",
+            "nombreFich": "CosEnergy",
+            "nombreDir": "CosEnergy"
+        },
+        {
+            "nombre": "ContratoEnergia",
+            "url": "54c4f791-ac10-4ea7-b0cc-bd792df387dc",
+            "nombreFich": "CosContractEnergy",
+            "nombreDir": "CosContractEnergy"
+        },
+        {
+            "nombre": "InformeVisita",
+            "url": "be43ea2e-4b17-4bd2-8136-aa1b3bb995ef",
+            "nombreFich": "CosVisitReport",
+            "nombreDir": "CosVisitReport"
+        },
+        {
+            "nombre": "Defectos",
+            "url": "ba23ceb9-98d3-4ef7-b89b-5b998e7ab020",
+            "nombreFich": "CosDefects",
+            "nombreDir": "CosDefects"
+        },
+        {
+            "nombre": "Riesgos",
+            "url": "b84ffafa-bfec-4a43-ba79-4931b7e90ba6",
+            "nombreFich": "CosRisk",
+            "nombreDir": "CosRisk"
+        },
+        {
+            "nombre": "Tickets",
+            "url": "c477f813-82f2-4671-b1e4-b7000e4e698c",
+            "nombreFich": "CosTicket",
+            "nombreDir": "CosTicket"
+        },
+        {
+            "nombre": "Pedidos",
+            "url": "f0acf6ec-bb8d-41b2-ad3a-0b2f89bca155",
+            "nombreFich": "CosPurchaseOrder",
+            "nombreDir": "CosPurchaseOrder"
+        },
+        {
+            "nombre": "HojasAcceso",
+            "url": "bccd1aea-b521-4757-b05f-25507005a8ae",
+            "nombreFich": "CosAccessSheet",
+            "nombreDir": "CosAccessSheet"
+        },
+        {
+            "nombre": "CatalogoTenant",
+            "url": "f3a844d9-8148-4eb6-be79-94efdb3815f7",
+            "nombreFich": "CoSCatalogoTenant",
+            "nombreDir": ""
+        },
+        {
+            "nombre": "CatalogoTotem",
+            "url": "914c5247-8b42-476c-b950-b63fcd37e640",
+            "nombreFich": "CoSCatalogoTotem",
+            "nombreDir": ""
+        },
+        {
+            "nombre": "EquipamientoTenant",
+            "url": "fa2b552f-73c5-452f-bc2f-374d27eda7a1",
+            "nombreFich": "CoSEquipamientoTenant",
+            "nombreDir": ""
+        },
+        {
+            "nombre": "EquipamientoTotem",
+            "url": "184a0dcf-24d9-4dd2-a06d-58a95dd79c4d",
+            "nombreFich": "CosEquipmentTotem",
+            "nombreDir": "CosEquipmentTotem"
+        },
+        {
+            "nombre": "AutorizacionesAdministrativas",
+            "url": "6376c822-3be7-4828-bc2d-dc9e77b1e880",
+            "nombreFich": "CosAdministrativeAuthorization",
+            "nombreDir": "CosAdministrativeAuthorization"
+        },
+        {
+            "nombre": "PIs",
+            "url": "00c32982-c2ec-4e20-b114-46ca564491c5",
+            "nombreFich": "PIs",
+            "nombreDir": "PIs"
         },
         {
             "nombre": "Hitos",
             "url": "d3d92edd-bced-4807-974c-503257e4b9a7",
-            "nombreFich": "Hitos"
+            "nombreFich": "Hitos",
+            "nombreDir": "Hitos"
         },
         {
             "nombre": "Tareas",
             "url": "09a0e00a-2d15-478d-951a-70353d0fc4dd",
-            "nombreFich": "Tareas"
+            "nombreFich": "Tareas",
+            "nombreDir": "Tareas"
         },
         {
             "nombre": "RQs CambioTitular",

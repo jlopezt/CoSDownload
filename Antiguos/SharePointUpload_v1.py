@@ -4,14 +4,21 @@ from office365.sharepoint.client_context import ClientContext
 from office365.runtime.auth.user_credential import UserCredential
 
 #Sharepoint URL y usuario
+"""
 username = "robotFicheros@totemtowersspain.es"
 password = "R0b0tF1ch3r0s"
 Sharepoint_destino = "https://totemtowersspain.sharepoint.com/sites/Prueba_QLIK"
-directorio_destino = "Documentos compartidos"
+"""
+username = "jose.lopezt@orange.com"
+password = "Jorsadi-8"
+Sharepoint_destino = "https://orange0.sharepoint.com/sites/TOTEMPrueba"
+
+directorio_destino = "Documentos compartidos/Carpeta1"
 size_chunk = 1000000
 
 #Argumentos:
 #   SharePointUpload [nombre_fichero] [sharepoint_destino] [directorio_destino]
+"""
 if (len (sys.argv) >= 2): 
     nombre_fichero = sys.argv[1];
     if (len (sys.argv) >= 3): 
@@ -20,6 +27,7 @@ if (len (sys.argv) >= 2):
             directorio_destino = sys.argv[3];
 else:
     print('SharePointUpload [nombre_fichero] [sharepoint_destino] [directorio_destino]')
+"""
 
 def print_upload_progress(offset):
     print ('Progreso ' + offset)
